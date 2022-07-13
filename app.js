@@ -1,18 +1,6 @@
-const btns=document.querySelectorAll("button");
-let bo=document.querySelector("body");
-let sp=document.querySelector("span");
-function generator(){
-    const red=Math.floor(Math.random()*256);
-    const green=Math.floor(Math.random()*256);
-    const blue=Math.floor(Math.random()*256);
-    return `rgb(${red},${green},${blue})`;
-}
-btns.forEach((btn)=>{
-    btn.addEventListener("click",(e)=>{
-        const rand=generator();
-        bo.style.backgroundColor=rand;
-        sp.textContent=rand;
-    })
+const btn=document.querySelector("button");
+btn.addEventListener("click",function(){
+    alert("Select your background color type.");
 })
 
 
